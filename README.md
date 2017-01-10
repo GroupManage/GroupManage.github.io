@@ -1,4 +1,4 @@
-<a class="btn" href="https://github.com/GroupManage">Télécharger</a>
+<button class="buttonDownload" href="https://github.com/GroupManage">Télécharger</button>
 # *Ce site est en cours de construction...*:wrench::nut_and_bolt:
 ### Qu'est-ce que GroupManage ?
 GroupManage est un logiciel de création de groupes spécialement prévu pour les TAP (Temps d’Accueil Périscolaire), mais il convient pour tout type de groupe géré selon le même principe. Il permet une affectation équitable des individus, mais, par le fait, ne garanti pas un groupe à chaque personnes ([Pourquoi ? - FAQ](goupmanage.github.io/FAQ.html#Pourquoi_peut_il_y_avoir_des_non_admissions)).
