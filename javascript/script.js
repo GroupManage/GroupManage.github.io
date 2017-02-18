@@ -4,7 +4,7 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     var navbar = $("#navbar");
-    var menu = $("#navbar ul");
+    var menu = $("#myTopnav");
 
     if (scroll >= navbar.position().top) {//scroll >= 200 &&
         menu.addClass("fixed");
@@ -15,13 +15,8 @@ $(window).scroll(function() {
 });
 
 //Collapsed menu for small screen
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+function displayMenu() {
+    $("#myTopnav").toggleClass("responsive");
 }
 
 // Ouverture de deux liens en même temps
