@@ -1,3 +1,0 @@
-[Update 1]
-Description=Test de lecture
-
