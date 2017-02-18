@@ -8,6 +8,16 @@
  * This file is a part of the bootstrap framework.
  * It just contain the minimum for this site.
  */
+
+/* Retour à la ligne au milieu d'un mot */
+* {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
 /*****************************************************text helper************************************************************************/
 .text-muted {
   color: #777;
