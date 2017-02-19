@@ -17,9 +17,13 @@ $(window).scroll(function() {
 //Collapsed menu for small screen
 function displayMenu() {
     $("#myTopnav").toggleClass("responsive");
+    if(!$("#myTopnav").hasClass("fixed")){
+        $("responsive").css("position","fixed");
+       
+    }
 }
 
-// Ouverture de deux liens en même temps
+// Ouverture de deux liens en mÃªme temps
 function openlink()
 {
     for(var i = 0; i < arguments.length; i++)
@@ -28,7 +32,7 @@ function openlink()
     }
 };
 
-// Récupération des paramètres de l'url
+// RÃ©cupÃ©ration des paramÃ¨tres de l'url
 function GetURLParameter(sParam)
 {
     var sPageURL = window.location.search.substring(1);
