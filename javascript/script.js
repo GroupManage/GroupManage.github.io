@@ -18,7 +18,7 @@ $(window).scroll(function() {
 function displayMenu() {
     $("#myTopnav").toggleClass("responsive");
     if(!$("#myTopnav").hasClass("fixed")){
-        $("responsive").css("position","fixed");
+        $("responsive").css("position","relative");
        
     }
 }
