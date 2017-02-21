@@ -16,13 +16,13 @@ $(window).scroll(function() {
 
 //Collapsed menu for small screen
 function displayMenu() {
-    $("#myTopnav").toggleClass("responsive");
     if(!$("#myTopnav").hasClass("fixed")){
         $("responsive").css("position","relative");
     }
     else{
         $("responsive").css("position", "fixed");
     }
+    $("#myTopnav").toggleClass("responsive");
 }
 
 // Ouverture de deux liens en même temps
