@@ -13,7 +13,6 @@ $(window).scroll(function() {
         menu.removeClass("fixed");
     }
 });
-alert("1");
 //Collapsed menu for small screen
 function displayMenu() {
     if(!$("#myTopnav").hasClass("fixed")){
