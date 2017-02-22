@@ -1,5 +1,4 @@
-
-
+alert("ztrrggr");
 // Scrolling du menu
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
