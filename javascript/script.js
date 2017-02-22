@@ -23,7 +23,7 @@ function displayMenu() {
         $("responsive").css("position", "fixed");
         alert("passage");
     }
-    alert($("responsive").css("position");
+    alert($("responsive").css("position"));
     $("#myTopnav").toggleClass("responsive");
 }
 
