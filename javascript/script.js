@@ -13,7 +13,7 @@ $(window).scroll(function() {
         menu.removeClass("fixed");
     }
 });
-
+alert("1");
 //Collapsed menu for small screen
 function displayMenu() {
     if(!$("#myTopnav").hasClass("fixed")){
@@ -21,9 +21,9 @@ function displayMenu() {
     }
     else{
         $("responsive").css("position", "fixed");
-        alert("passage");
+        console.log("passage");
     }
-    alert($("responsive").css("position"));
+    console.log($("responsive").css("position"));
     $("#myTopnav").toggleClass("responsive");
 }
 
