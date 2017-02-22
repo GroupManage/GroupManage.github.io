@@ -21,7 +21,9 @@ function displayMenu() {
     }
     else{
         $("responsive").css("position", "fixed");
+        alert("passage");
     }
+    alert($("responsive").css("position");
     $("#myTopnav").toggleClass("responsive");
 }
 
