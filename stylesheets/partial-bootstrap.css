@@ -364,7 +364,7 @@ ul.topnav li a.active {
 }
 
 @media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive {}
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
@@ -384,6 +384,11 @@ ul.topnav li a.active {
     position:fixed;
     top:0;
 }
+
+.relative {
+    position: relative;
+}
+
 /******************************************Navigation topbar***********************************************************/
 
 /*****************************************Glyphicons Halfings**********************************************************/
