@@ -24,7 +24,7 @@
     <ul class="topnav" id="myTopnav">
       <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
       <li><a class="active" href="how-to-start.html">Commencer</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="index.html#contact"><span class="glyphicon glyphicon-pen"></span> Contact</a></li>
       <li class="right"><a href="index.html#about"><span class="glyphicon glyphicon-info-sign"></span> A propos</a></li>
       <li class="icon"><a href="javascript:void(0);" onclick="displayMenu()"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
     </ul>
@@ -39,15 +39,20 @@
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
 
 <p>Une fois le logiciel téléchargé, lancez l'executable. Lisez puis acceptez le contrat de licence, et dans la page suivante veuillez lire le premier point.</p>
-<p>La troisième page vous demande de sélectionner les composants à installer. Vous pouvez choisir d'installer le logiciel seul, où d'installer aussi le gestionnaire de ses mises à jours. Je conseille de tout installer, afin de profiter plus facilement des nouvelles fonctionnalitées qui peuvent être ajoutées.</p>
-<p>La quatrième page propose les tâches supplémentaires à effectuer. Vous pouvez ainsi décider de créer une icône sur le bureau, et choisir la fréquence des mises à jour. Je conseil pour cela de cocher "Au lancement de GroupManage" et de laisser décoché "Installer la mises à jour automatiquement".</p>
+<p>La troisième page permet de sélectionner le dossier de destination, c'est à dire le dossier dans lequel GroupManage sera installé.</p>
+<p>La quatrième page vous demande de sélectionner les composants à installer. Vous pouvez choisir d'installer le logiciel seul, où d'installer aussi le gestionnaire de ses mises à jours. Je conseille de tout installer, afin de profiter plus facilement des nouvelles fonctionnalitées qui peuvent être ajoutées.</p>
+<p>La cinquième page est la page de sélection du dossier du menu Démarrer depuis lequelle le logiciel sera accéssible. Vous pourrez accéder au logiciel après l'installation en allant dans Démarrer, Tous les programmes.</p>
+<p>La sixième page propose les tâches supplémentaires à effectuer. Vous pouvez ainsi décider de créer une icône sur le bureau, et choisir la fréquence des mises à jour. Je conseil pour cela de cocher "Au lancement de GroupManage" et de laisser décoché "Installer la mises à jour automatiquement".</p>
 <p>Enfin, cliquez sur Installer.</p>
 
 <h3>
 <a id="utilisation" class="anchor" href="#utilisation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Utilisation</h3>
 
 
-<p>Une fois le logiciel installé, lancez le. Appuyez sur la touche F1 ou cliquez sur le point d'interrogation dans la barre de menu puis sur "Rubrique d'aide" pour afficher l'aide. Dans le sommaire, accédez à la rubrique "Tutoriel" puis suivez le.</p>
+<p>Une fois le logiciel installé, lancez le. Appuyez sur la touche F1 ou cliquez sur le point d'interrogation dans la barre de menu puis sur "Rubrique d'aide" pour afficher l'aide.</p>
+<img src="lancement-aide.png" alt="Accéder à la rubrique d'aide." title="Accéder à la rubrique d'aide."/>
+<p>Dans le sommaire, accédez à la rubrique "Tutoriel" puis suivez le.</p>
+<img src="rubrique-aide.png" alt="Accéder au tutoriel." title="Accéder au tutoriel." />
 <p>Bonne utilisation !</p>
 
       <footer class="site-footer">
@@ -56,6 +61,13 @@
       </footer>
 
     </section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" language="javascript" src="javascript/script.js"></script>
