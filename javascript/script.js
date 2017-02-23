@@ -4,24 +4,22 @@ $(window).scroll(function() {
     var navbar = $("#navbar");
     var menu = $("#myTopnav");
 
-    if (scroll >= navbar.position().top) {//scroll >= 200 &&
+    if (scroll >= navbar.position().top) {
+        menu.removeClass("relative");
         menu.addClass("fixed");
         navbar.height(menu.outerHeight());
-    } else {
+    }
+    else {
         menu.removeClass("fixed");
     }
 });
+
 //Collapsed menu for small screen
 function displayMenu() {
-    if(!$("#myTopnav").hasClass("fixed")){
-        $("responsive").css("position","relative");
-    }
-    else{
-        $("responsive").css("position", "fixed");
-        console.log("passage");
-    }
-    console.log($("responsive").css("position"));
     $("#myTopnav").toggleClass("responsive");
+    if(!$("#myTopnav").hasClass("fixed")){
+        $("#myTopnav").addClass("relative");
+    }
 }
 
 // Ouverture de deux liens en même temps
