@@ -1,15 +1,16 @@
+
 // Scrolling du menu
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     var navbar = $("#navbar");
     var menu = $("#myTopnav");
 
-    if (scroll >= navbar.position().top) {
+    if (scroll >= navbar.position().top) {//scroll >= 200 &&
         menu.removeClass("relative");
         menu.addClass("fixed");
         navbar.height(menu.outerHeight());
-    }
-    else {
+
+    } else {
         menu.removeClass("fixed");
     }
 });
@@ -20,9 +21,10 @@ function displayMenu() {
     if(!$("#myTopnav").hasClass("fixed")){
         $("#myTopnav").addClass("relative");
     }
+
 }
 
-// Ouverture de deux liens en mÃªme temps
+// Ouverture de deux liens en même temps
 function openlink()
 {
     for(var i = 0; i < arguments.length; i++)
@@ -31,7 +33,7 @@ function openlink()
     }
 };
 
-// RÃ©cupÃ©ration des paramÃ¨tres de l'url
+// Récupération des paramètres de l'url
 function GetURLParameter(sParam)
 {
     var sPageURL = window.location.search.substring(1);
@@ -50,22 +52,26 @@ function GetURLParameter(sParam)
 var tech = GetURLParameter('technology');
 var blog = GetURLParameter('blog');*/
 
+//Création de la boite modal au clic sur une image
 {
     // Get the modal
     var modal = document.getElementById('myModal');
 
     // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.images;
+    var img = $("img:not(.noModal)");//document.images;//document.querySelector("img:not(.noModal)");
+    console.log(img);
     var modalImg = document.getElementById("img01");
+    var titleText = document.getElementById("title");
     var captionText = document.getElementById("caption");
 
     for(var i=0; i<img.length; i++){
         img[i].onclick = function(){
             modal.style.display = "block";
-            modalImg.src = this.src;
-            modalImg.alt = this.alt;
-            modalImg.title = this.title;
-            captionText.innerHTML = this.alt;
+            modalImg.src = $(this).attr("src");
+            modalImg.alt = $(this).attr("alt");
+            modalImg.title = $(this).attr("title");
+            titleText.innerHTML = $(this).attr("alt");
+            captionText.innerHTML = $(this).attr("title");
         }
     }
 
